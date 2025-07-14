@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Self-Assessment Mental Health</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧠 Cek Kesehatan Mental Kamu</h1>
+      <form method="POST" action="/submit">
+        {% for i in range(questions|length) %}
+        <label>{{ i+1 }}. {{ questions[i] }}</label>
+        <select name="q{{i+1}}" required>
+          {% for j in range(1, 8) %}
+          <option value="{{j}}">{{j}}</option>
+          {% endfor %}
+        </select>
+        {% endfor %}
+        <button type="submit">🚀 Lihat Hasil</button>
+      </form>
+    </div>
+  </body>
+</html>

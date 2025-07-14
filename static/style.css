@@ -1,0 +1,82 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0eaff;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff0fb;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(180, 120, 255, 0.2);
+  border: 2px dashed #d3bdf0;
+}
+
+h1, h2 {
+  color: #9d4edd;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #cba9ff;
+  border-radius: 12px;
+  font-size: 1em;
+}
+
+button {
+  background: #9d4edd;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #7b2cbf;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  background: #fdf7ff;
+}
+
+th {
+  background: #e4d0fb;
+}
+
+a {
+  display: inline-block;
+  margin-top: 30px;
+  background: #ff90b3;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+a:hover {
+  background: #ff6793;
+}

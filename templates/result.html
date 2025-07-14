@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hasil Self-Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>✨ Hasil Penilaian Mental Kamu</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Aspek</th>
+            <th>Skor</th>
+            <th>Kategori</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for aspek, (skor, kategori) in categories.items() %}
+          <tr>
+            <td>{{ aspek }}</td>
+            <td>{{ skor }}</td>
+            <td>{{ kategori }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h2>💬 Saran dari AI untuk Kamu</h2>
+      <p>{{ suggestion }}</p>
+
+      <a href="/">🔁 Coba Lagi</a>
+    </div>
+  </body>
+</html>
